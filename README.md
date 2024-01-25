@@ -4,7 +4,8 @@ Clone this into .config/nvim and open neovim to set up
 
 Dependencies:
 - ripgrep      https://github.com/BurntSushi/ripgrep
-- sudo apt install python3.10-venv --> needed for python lsp support
+- sudo apt install python3.10-venv (needed for python lsp support)
+- A nerd font from https://www.nerdfonts.com/font-downloads (optional, needed for neo-tree icons)
 
 Custom Hotkeys:
 - Ctl+n        open neo-tree
@@ -15,6 +16,7 @@ Custom Hotkeys:
 - <leader>gd   go to definition
 - <leader>gr   get references
 - <leader>ca   code action
+- gcc          comment/uncomment line(s)
 
 Vim Tab Navigation:
 - Ctl+h        left
