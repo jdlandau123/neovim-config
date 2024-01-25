@@ -10,12 +10,12 @@ Dependencies:
 Custom Hotkeys:
 - Ctl+n        open neo-tree
 - Ctl+p        telescope file search
-- <leader>fg   telescope live grep
-- <leader>h    :nohlsearch
+- leader+fg    telescope live grep
+- leader+h     :nohlsearch
 - Shift+k      display docs for word at cursor
-- <leader>gd   go to definition
-- <leader>gr   get references
-- <leader>ca   code action
+- leader+gd    go to definition
+- leader+gr    get references
+- leader+ca    code action
 - gcc          comment/uncomment line(s)
 
 Vim Tab Navigation:
