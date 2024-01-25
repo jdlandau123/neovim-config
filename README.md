@@ -25,4 +25,9 @@ Vim Tab Navigation:
 - Ctl+j        down
 
 Other Notes:
+- :Lazy opens up lazy package manager settings
 - :Mason opens up the mason gui for lsp and formatting options
+- If working between linux and windows you might need to standardize line endings to LF using:
+    - git config --global core.eol lf
+    - git config --global core.autocrlf false
+    - git reset --hard head (if the branch is already checked out)
