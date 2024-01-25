@@ -4,6 +4,7 @@ Clone this into .config/nvim and open neovim to set up
 
 Dependencies:
 - ripgrep      https://github.com/BurntSushi/ripgrep
+- sudo apt install python3.10-venv --> needed for python lsp support
 
 Custom Hotkeys:
 - Ctl+n        open neo-tree
