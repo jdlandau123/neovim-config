@@ -8,7 +8,7 @@ Dependencies:
 - A nerd font from https://www.nerdfonts.com/font-downloads (optional, needed for neo-tree icons)
 
 Custom Hotkeys:
-- Ctl+n        open neo-tree
+- Ctl+n        toggle neo-tree
 - Ctl+p        telescope file search
 - leader+fg    telescope live grep
 - leader+h     :nohlsearch
@@ -17,6 +17,7 @@ Custom Hotkeys:
 - leader+gr    get references
 - leader+ca    code action
 - gcc          comment/uncomment line(s)
+- leader+gp    show git preview
 
 Vim Tab Navigation:
 - Ctl+h        left

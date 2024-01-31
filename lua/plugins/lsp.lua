@@ -28,7 +28,18 @@ return {
       lspconfig.lua_ls.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.html.setup({})
-      lspconfig.pylsp.setup({})
+      lspconfig.pylsp.setup({
+        settings = {
+          pylsp = {
+            plugins = {
+              pycodestyle = {
+                -- maxLineLength = 100
+                enabled = false
+              }
+            }
+          }
+        }
+      })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
