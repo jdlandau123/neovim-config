@@ -14,7 +14,8 @@ return {
           "lua_ls",
           "tsserver",
           "html",
-          "pylsp"
+          "pylsp",
+          "svelte"
         }
       })
     end
@@ -39,6 +40,9 @@ return {
             }
           }
         }
+      })
+      lspconfig.svelte.setup({
+        filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' }
       })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
