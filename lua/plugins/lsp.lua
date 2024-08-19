@@ -15,9 +15,9 @@ return {
           "tsserver",
           "html",
           "pylsp",
-          "svelte",
+          -- "svelte",
           -- "gopls"
-          "csharp_ls"
+          -- "csharp_ls"
         }
       })
     end
@@ -43,12 +43,14 @@ return {
           }
         }
       })
-      lspconfig.svelte.setup({
-        filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' }
-      })
+
+      -- lspconfig.svelte.setup({
+      --   filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' }
+      -- })
+
       -- lspconfig.gopls.setup({})
 
-      lspconfig.csharp_ls.setup({})
+      -- lspconfig.csharp_ls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
