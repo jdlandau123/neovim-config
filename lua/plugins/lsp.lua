@@ -16,7 +16,8 @@ return {
           "html",
           "pylsp",
           "svelte",
-          "gopls"
+          -- "gopls"
+          "csharp_ls"
         }
       })
     end
@@ -45,7 +46,9 @@ return {
       lspconfig.svelte.setup({
         filetypes = { 'typescript', 'javascript', 'svelte', 'html', 'css' }
       })
-      lspconfig.gopls.setup({})
+      -- lspconfig.gopls.setup({})
+
+      lspconfig.csharp_ls.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
