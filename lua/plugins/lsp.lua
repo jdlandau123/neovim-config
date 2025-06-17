@@ -12,8 +12,8 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          "tsserver",
-          "html",
+          -- "tsserver",
+          -- "html",
           "pylsp",
           -- "svelte",
           -- "gopls"
@@ -29,8 +29,8 @@ return {
       local lspconfig = require("lspconfig")
 
       lspconfig.lua_ls.setup({})
-      lspconfig.tsserver.setup({})
-      lspconfig.html.setup({})
+      -- lspconfig.tsserver.setup({})
+      -- lspconfig.html.setup({})
       lspconfig.pylsp.setup({
         settings = {
           pylsp = {
